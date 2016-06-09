@@ -4,6 +4,6 @@ Rails.application.routes.draw do
               name: 'Accept',
               value: 'application/vnd.follower-server.com; version=1' },
               defaults: { format: :json }) do
-    resources :users, only: [:index]
+    resources :users, only: [:index, :create]
   end
 end
